@@ -9,5 +9,10 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: ['xlsx']
+  },
+  server: {
+    host: true, // Allow external access
+    port: 5173,
+    strictPort: true
   }
 })
